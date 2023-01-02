@@ -4,7 +4,7 @@ import { BASE_URL, API_KEY, BACKDROP_BASE_URL } from "./config";
 import axios from "axios";
 import { TvShowApi } from "./api/tvShow";
 import Rating from "./components/Rating/rating";
-import logoImg from "./assets/images/logo.png";
+import logoImg from "./assets/images/logo.webp";
 import RecommendedList from "./components/RecommendedShowList/recommendedList";
 import SearchBar from "./components/SearchBar/SearcBar";
 import { Video } from "./components/Video/Video";
@@ -90,8 +90,7 @@ function App() {
       <div className="content_outer_wrapper">
         <div className="header">
           <div className="logo">
-            {/* <img src={logoImg} /> */}
-            <span>Popular TV Shows</span>
+            <img src={logoImg} />
           </div>
           <div className="search_wrapper">
             <SearchBar
