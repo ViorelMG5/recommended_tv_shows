@@ -23,7 +23,6 @@ import Rating from "../Rating/rating";
 // }
 export default function SearchBar({ showList, getShowList, getShow }) {
   const [initialState, setInitialState] = useState("");
-  const [isActive, setIsActive] = useState(false);
 
   function onChange(e) {
     // if(e.target.value.trim() !== '') {

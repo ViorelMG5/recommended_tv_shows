@@ -1,7 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import { BASE_URL, API_KEY, BACKDROP_BASE_URL } from "./config";
-import axios from "axios";
+import { BACKDROP_BASE_URL } from "./config";
 import { TvShowApi } from "./api/tvShow";
 import Rating from "./components/Rating/rating";
 import logoImg from "./assets/images/logo.webp";
@@ -90,7 +89,7 @@ function App() {
       <div className="content_outer_wrapper">
         <div className="header">
           <div className="logo">
-            <img src={logoImg} />
+            <img alt="blog" src={logoImg} />
           </div>
           <div className="search_wrapper">
             <SearchBar
