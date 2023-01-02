@@ -221,4 +221,10 @@ svg {
   .description p {
     font-size: 16px;
   }
+  .results {
+    width: 100%;
+  }
+  .results .list_item {
+    font-size: 16px;
+  }
 }
