@@ -30,7 +30,7 @@ export default function RecommendedList({ RecommendedList, onClick }) {
           spaceBetween: 40,
         },
         250: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 40,
         },
       }}

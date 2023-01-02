@@ -192,6 +192,9 @@ svg {
   }
 }
 @media (max-width: 767px) {
+  .logo {
+    display: none;
+  }
   .content_outer_wrapper {
     flex-direction: column;
     display: flex;
@@ -204,12 +207,18 @@ svg {
   }
   .video_wrapper {
     max-width: 100%;
-    min-height: 40vh;
+    min-height: 30vh;
   }
   .video_wrapper iframe {
     height: initial;
   }
   .search_wrapper {
     margin: 0;
+  }
+  .card-item .title {
+    font-size: 16px;
+  }
+  .description p {
+    font-size: 16px;
   }
 }
