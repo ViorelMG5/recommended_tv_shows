@@ -79,7 +79,7 @@ function App() {
   // Background Color
   const getBackground = () => {
     return currentTvShow
-      ? `linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("${BACKDROP_BASE_URL}${currentTvShow.backdrop_path}") no-repeat center / cover`
+      ? `linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url("${BACKDROP_BASE_URL}${currentTvShow.backdrop_path}") no-repeat center / cover`
       : "black";
   };
   // Vote rating

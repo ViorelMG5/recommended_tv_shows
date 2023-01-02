@@ -30,8 +30,8 @@ export default function RecommendedList({ RecommendedList, onClick }) {
           spaceBetween: 40,
         },
         250: {
-          slidesPerView: 1,
-          spaceBetween: 40,
+          slidesPerView: 2,
+          spaceBetween: 10,
         },
       }}
       className="mySwiper"
