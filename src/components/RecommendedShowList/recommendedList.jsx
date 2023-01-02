@@ -7,12 +7,33 @@ import "swiper/css/scrollbar";
 export default function RecommendedList({ RecommendedList, onClick }) {
   const RecommendedItems = (
     <Swiper
-      slidesPerView={5}
       spaceBetween={30}
       scrollbar={{
         hide: true,
       }}
       modules={[Scrollbar]}
+      breakpoints={{
+        1500: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        991: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        250: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+      }}
       className="mySwiper"
     >
       {RecommendedList.map((item) => {

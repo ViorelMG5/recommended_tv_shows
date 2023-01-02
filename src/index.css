@@ -177,3 +177,17 @@ svg {
   display: flex;
   align-items: center;
 }
+@media (max-width: 1200px) {
+  .content_outer_wrapper {
+    grid-template-rows: 0.5fr 2fr 1fr;
+  }
+  .content_wrapper {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .video_wrapper {
+    max-width: 90%;
+    margin: 0;
+  }
+}
