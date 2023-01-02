@@ -24,13 +24,13 @@ code {
   flex-grow: 1;
 }
 .content_outer_wrapper {
-  max-width: 90vw;
-  padding: 2% 0;
+  padding: 2% 5vw;
   margin: auto;
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
-  height: 100vh;
+  min-height: 100vh;
 }
+
 .rating_wrapper {
   display: flex;
   gap: 10px;
@@ -188,6 +188,28 @@ svg {
 
   .video_wrapper {
     max-width: 90%;
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .content_outer_wrapper {
+    flex-direction: column;
+    display: flex;
+    gap: 4vh;
+  }
+  .header {
+    flex-grow: 0;
+    justify-content: space-between;
+    margin-bottom: 6vh;
+  }
+  .video_wrapper {
+    max-width: 100%;
+    min-height: 40vh;
+  }
+  .video_wrapper iframe {
+    height: initial;
+  }
+  .search_wrapper {
     margin: 0;
   }
 }
